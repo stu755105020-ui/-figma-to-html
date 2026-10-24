@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    /* vì cỡ chữ default là 16px ---> 62.5%*16px = 10px--> 1.6rem = 16px */
+    font-size: 62.5%;
+}
+/* khôi phục chữ mặt định  */
+body{
+    font-size: 1.6rem;
+    font-family: "Google Sans", sans-serif;
+}
+
+/* =========================commmo======================= */
+a{
+    text-decoration: none;
+}
+.main-content{
+    width: 1170px;
+    margin-left: auto;
+    max-width: calc(100% - 48px);
+}
+/* =========================header======================= */
+.header{
+    background-color: rgba(24, 121, 205, 0.607);
+}
+.header.fixed{
+    position: sticky;
+    top:-28px;
+}
+.header .body{
+    display: flex;
+    align-items: center;
+    padding: 36px 8px;
+}
+.nav{
+    margin-left: auto;
+}
+.nav ul{
+    display: flex;
+}
+.nav a{
+    color:#5f5b56;
+ 
+    font-size: 1.6rem;
+    font-style: normal;
+    padding:8px 21px;
+    position: relative;
+  
+  
+}
+ .nav a:hover,
+ .nav li.active a{
+    color: #171100;;
+        text-shadow:  1px 0 0 currentColor;
+ }
+   .nav li.active  a::after{
+    content: "";
+    width: 12px;
+    height: 2px;
+     border-radius: 1px;
+     background: #171100;
+     display: block;
+   position: absolute;
+     left: 21px;
+     bottom: 6px;
+   }
+
+.btn{
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 24.5px;
+  background: #171100;
+  padding: 11px 16px;
+  display: inline block;
+  line-height: 50px;
+  min-width: 118px;
+  color: aliceblue;
+}
+.header .btn-sign-up{
+    min-width: 144px;
+
+}
+
+.header .action{
+    margin-left: 49px;
+}
